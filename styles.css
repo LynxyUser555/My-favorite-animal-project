@@ -13,7 +13,7 @@ html, body {
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #e6f2f3;
+    background-color: #d6e2e3;
     color: #222;
 }
 
@@ -47,11 +47,13 @@ body {
     background-color: #6794f4;
     padding: 10px 20px;
     border-radius: 8px;
+    transition: all 0.12s ease;
 }
 
 
 .navbar :active {
-    background: linear-gradient(to bottom, #198bd276, #4c8bf08f);
+    background-color: rgba(100, 150, 255, 0.15);
+    transform: scale(0.99);
 }
 
 .content {
@@ -124,5 +126,35 @@ body {
 
     .content ul,li {
         font-size: 1.5rem;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color: #1d1f25;
+        color: #d9dddc;
+    }
+
+    .navbar {
+        background-color: #1d2131db;
+        border-bottom: 1px solid #26356a;
+    }
+
+    .navbar a {
+        background-color: #1a307c49;
+    }
+
+    .content h1 {
+        color: #2e4987;
+    }
+
+    .content h3 {
+        color: #175796;
+    }
+
+    .footer {
+        background-color: #1d2131db;
+        color: #0855a2;
+        border-top: 1px solid #26356a;
     }
 }
